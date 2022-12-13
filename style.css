@@ -25,6 +25,12 @@ body {
     background: #e5ffe7;
 }
 
+.avatar {
+    width: 400px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+}
+
 .about-section {
     background: #ffe5e5;
 }
