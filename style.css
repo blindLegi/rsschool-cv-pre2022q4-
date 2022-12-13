@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0;
+
+    background-color: #f1f1f1;
+}
+
+.container {
+    background: #fff9cd;
+}
+
+.aside {
+    background: #e5ffe7;
+}
+
+.about-section {
+    background: #ffe5e5;
+}
+
+.footer-container {
+    background: #f4faff;
+}
