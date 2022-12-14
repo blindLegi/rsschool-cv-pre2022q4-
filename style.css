@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 html {
@@ -17,26 +19,102 @@ body {
     background-color: #f1f1f1;
 }
 
-.container {
-    background: #fff9cd;
+ul {
+    list-style-type: none;
+}
+
+/*.container {
     box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+} */
+
+.section-title {
+    padding: 5px;
+    text-align: center;
+}
+
+.head-container {
+    background: #fff9cd;
+}
+
+.main-container {
+    display: flex;
 }
 
 .aside {
     background: #e5ffe7;
 }
 
+.section {
+    margin: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);  
+}
+
+.photo-section {
+    background: #feffe5;
+}
+    
+.contacts-section {
+    background: #feffe5;
+}
+
+.about-section {
+    background: #feffe5;
+}
+
+.skills-section {
+    background: #feffe5;
+}  
+
+.experience-section {
+    background: #feffe5;
+}
+
+.education-section {
+    background: #feffe5;
+}
+
+.code-section {
+    background: #feffe5;
+}
+
+.english-section {
+    background: #feffe5;
+}
+
+.social{
+    height: 32px;
+}
+
+.icon {
+    height: 32px;
+    width: 32px;
+    margin: 0 2px;
+    background-repeat: no-repeat;
+  
+  
+    transition: .3s;
+}
+
+.icon:hover {
+    box-shadow: none;
+    transform: scale(0.8);
+    opacity: 0.5;
+}
+
+
 .avatar {
+    margin: 0 20px 20px 20px;
     width: 400px;
     border-radius: 20px;
     box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
 }
 
-.about-section {
+.main-section {
     background: #ffe5e5;
 }
 
 .footer-container {
-    margin-top: 20px;
-    background: #f4faff;
+    background: #fac5ff;
 }
