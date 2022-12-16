@@ -1,3 +1,15 @@
+@font-face {
+    font-family: 'LibreBaskerville';
+    src: url(./assets/font/LibreBaskerville-Bold.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "LibreBaskerville";
+    src: url(./assets/font/LibreBaskerville-Regular.ttf);
+    font-weight: 100;
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -14,18 +26,15 @@ body {
     justify-content: space-between;
     max-width: 1440px;
     margin: 0 auto;
-    padding: 0;
 
     background-color: #f1f1f1;
+
+    font-family: 'LibreBaskerville';
 }
 
 ul {
     list-style-type: none;
 }
-
-/*.container {
-    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
-} */
 
 .section-title {
     padding: 5px;
@@ -48,7 +57,12 @@ ul {
     margin: 20px;
     padding: 10px;
     border-radius: 20px;
-    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);  
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.35);  
+    transition: .3s;
+}
+
+.section:hover {
+    box-shadow: none;
 }
 
 .photo-section {
@@ -100,7 +114,7 @@ ul {
 .icon:hover {
     box-shadow: none;
     transform: scale(0.8);
-    opacity: 0.5;
+    
 }
 
 
@@ -108,7 +122,6 @@ ul {
     margin: 0 20px 20px 20px;
     width: 400px;
     border-radius: 20px;
-    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
 }
 
 .main-section {
