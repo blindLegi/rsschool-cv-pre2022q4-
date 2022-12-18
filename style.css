@@ -1,5 +1,19 @@
+@font-face {
+    font-family: 'LibreBaskerville';
+    src: url(./assets/font/LibreBaskerville-Bold.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "LibreBaskerville";
+    src: url(./assets/font/LibreBaskerville-Regular.ttf);
+    font-weight: 100;
+}
+
 * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 html {
@@ -12,31 +26,239 @@ body {
     justify-content: space-between;
     max-width: 1440px;
     margin: 0 auto;
-    padding: 0;
 
     background-color: #f1f1f1;
+
+    font-family: 'LibreBaskerville';
 }
 
-.container {
-    background: #fff9cd;
-    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+ul {
+    list-style: none;
 }
 
-.aside {
-    background: #e5ffe7;
+a {
+    font-weight: 100;
+    color: #000;
 }
 
-.avatar {
-    width: 400px;
+.link {
+    transition: .3s;
+}
+
+.link:hover {
+    background-color: rgb(255, 221, 221);
+}
+
+.text {
+    font-weight: 100;
+}
+
+.menu-btn {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 15px;
+    left: 31px;
+
+    width: 32px;
+    height: 32px;
+
+    cursor: pointer;
+    z-index: 1;
+}
+
+.menu-btn > span,
+.menu-btn > span::before,
+.menu-btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    transition-duration: .3s;
+}
+
+.menu-btn > span::before {
+    content: '';
+    top: -8px;
+}
+
+.menu-btn > span::after {
+    content: '';
+    top: 8px;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+
+    text-align: center;
+
+    background-color: #e5ffe7;
+
+    transform: translateX(-100%) translateY(-100%) scale(0.2) ;
+    transition-duration: .5s;
+}
+
+.nav-item {
+    display: block;
+    padding: 12px 24px;
+
+    font-size: 20px;
+    font-weight: 100;
+
+    transition-duration: .3s;
+}
+
+.nav-link {
+    text-decoration: none;
+}
+
+.nav-item:hover {
+    background-color: #a3e3a8;
+
+    cursor: pointer;
+}
+
+.menu-btn.active span {
+    transform: rotate(45deg);
+}
+
+.menu-btn.active span::before {
+    top: 0;
+    transform: rotate(0);
+}
+
+.menu-btn.active span::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+.menu.active {
+    box-shadow: 40px 20px 14px rgba(0, 0, 0, 0.35); 
+
+    transform: translateX(0);
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateX(-100%);
+    transition: .3s;
+}
+
+.overlay.active {
+    transform: translateX(0);
+}
+
+.section-title {
+    padding: 5px 5px 15px;
+    text-align: center;
+}
+
+.main-container {
+    display: flex;
+}
+
+.section {
+    margin: 20px;
+    padding: 20px;
     border-radius: 20px;
-    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.35);  
+    transition: .3s;
+
+    text-align: center;
+}
+
+.section:hover {
+    box-shadow: none;
+}
+
+.photo-section {
+    background: #feffe5;
+}
+    
+.contacts-section {
+    background: #feffe5;
 }
 
 .about-section {
-    background: #ffe5e5;
+    background: #feffe5;
 }
 
+.skills-section {
+    background: #feffe5;
+}  
+
+.experience-section {
+    background: #feffe5;
+}
+
+.education-section {
+    background: #feffe5;
+}
+
+.code-section {
+    background: #feffe5;
+}
+
+.code {
+    text-align: start;
+}
+
+.english-section {
+    background: #feffe5;
+}
+
+.social{
+    height: 32px;
+}
+
+.icon {
+    height: 32px;
+    width: 32px;
+    margin: 0 2px;
+    background-repeat: no-repeat;
+  
+  
+    transition: .3s;
+}
+
+.icon:hover {
+    box-shadow: none;
+    transform: scale(0.8);
+    
+}
+
+
+.avatar {
+    margin: 0 20px 20px 20px;
+    width: 300px;
+    border-radius: 20px;
+}
+
+
 .footer-container {
-    margin-top: 20px;
-    background: #f4faff;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.logo {
+    width: 81px;
+    height: auto;
+
+    transition: .3s;
+}
+
+.logo:hover {
+    cursor: pointer;
+    opacity: 0.5;
 }

@@ -9,36 +9,108 @@
 </head>
 <body>
     <header class="header">
-        <div class="container">
-            <nav class="nav">
-                <ul class="nav-list">
-                    <li class="nav-item"><a href="" class="nav-link">Contacts</a></li>
-                    <li class="nav-item"><a href="" class="nav-link">About me</a></li>
-                    <li class="nav-item"><a href="" class="nav-link">Skills</a></li>
-                    <li class="nav-item"><a href="" class="nav-link">Code example</a></li>
-                    <li class="nav-item"><a href="" class="nav-link">Experience</a></li>
-                    <li class="nav-item"><a href="" class="nav-link">Education</a></li>
-                    <li class="nav-item"><a href="" class="nav-link">English</a></li>
-                </ul>
-            </nav>
+        <div class="container head-container">
+            <div class="menu-btn">
+                <span></span>
+            </div>
+            <div class="overlay"></div>
+            <div class="menu">
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+                        <li class="nav-item"><a href="#about" class="nav-link">About me</a></li>
+                        <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                        <li class="nav-item"><a href="#code" class="nav-link">Code example</a></li>
+                        <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+                        <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                        <li class="nav-item"><a href="#english" class="nav-link">English</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
     <main class="main">
         <div class="container main-container">
             <div class="aside">
-                <img class="avatar" src="./assets/img/photo.jpeg" alt="my photo">
-                main-aside
+                <section class="section photo-section">
+                    <h1 class="section-title">Aleksei Skiruha</h1>
+                    <img class="avatar" src="./assets/img/photo.jpeg" alt="my photo">
+                </section>
+                <section class="section contacts-section" id="contacts">   
+                    <h2 class="section-title">Contacts</h2>
+                    <ul class="list">
+                        <li class="social text">+375298380900</li>
+                        <li class="social"><a href="http://alekse.skiruha@gmail.com"><img class="icon" src="./assets/svg/MailGmail.svg" alt="gmail"></a><a href="http://t.me/blindlegi"><img class="icon" src="./assets/svg/telegram-svg.svg" alt="telegramm"></a><a href="http://discordapp.com/users/392383565356204034"><img class="icon" src="./assets/svg/discord.svg" alt="discord"></a><a href="https://github.com/blindLegi"><img class="icon" src="./assets/svg/GitHub-Mark-32px.png" alt="GitHub"></a><a href="https://www.linkedin.com/in/legi/"><img class="icon" src="./assets/svg/linkedin.svg" alt="linkedin"></a></li>
+                    </ul>
+                </section>
+                <section class="section experience-section" id="experience">
+                    <h2 class="section-title">Experience</h2>
+                    <ul class="list">
+                        <li><a class="link" href="https://jsfiddle.net/blindLegi/z9a0kop2/3/">Drop-down Cards Plugin</a></li>
+                        <li><a class="link" href="https://jsfiddle.net/blindLegi/g8apswvu/2/">Drag and Drop</a></li>
+                        <li><a class="link" href="https://jsfiddle.net/blindLegi/2Lk51csx/1/">Slider</a></li>
+                        <li><a class="link" href="https://jsfiddle.net/blindLegi/9ypq40ne/3/">Mini-game</a></li>
+                        <li><a class="link" href="https://jsfiddle.net/blindLegi/y8n4hajf/1/">Aim game</a></li>
+                    </ul>
+                </section>
+                <section class="section skills-section" id="skills">
+                    <h2 class="section-title">Skills</h2>
+                    <ul class="list">
+                        <li class="text">Git</li>
+                        <li class="text">HTML (basics)</li>
+                        <li class="text">CSS (basics)</li>
+                        <li class="text">JavaScript (basics)</li>
+                    </ul>
+                </section>
             </div>
-            <div class="about-section">
-                main-about
+            <div class="main-section">
+                <section class="section about-section" id="about">
+                    <h2 class="section-title">About me</h2>
+                    <p class="text">Hello from Minsk! I have lived here since I went to university. I graduated from Belarusion National Technical University with a bachelor's degree in foundary production of ferrous and non-ferrous metals. In the last years of my studies, I got a part-time job as a courier driver. After that I was taken into military service for a year. The time I spent there...was fun! It was there that i began to think about moving into IT. I decided to try Frontend and found rs school. </p>
+                </section>
+                <section class="section education-section" id="education">
+                    <h2 class="section-title">Education</h2>
+                    <ul class="list">
+                        <li class="text">Belarusion National Technical University. Foundary production of ferrous and non-ferrous metals. Bachelor's degree.</li>
+                        <li><a class="link" href="https://vladilen.ru/marathon">Marathon 5 days 5 JavaScript projects.</a></li>
+                    </ul>
+                </section>
+                <section class="section code-section" id="code">
+                    <h2 class="section-title">Code example</h2>
+                    <pre class="code">
+                        <code>
+ const slides = document.querySelectorAll('.slide')
+
+ for (const slide of slides) {
+   slide.addEventListener('click', ()=> {
+   clearActiveClasses() 
+   slide.classList.add('active')
+   })
+ }
+
+ function clearActiveClasses() {
+   slides.forEach((slide) => {
+   slide.classList.remove('active')
+   })
+ }
+                        </code>
+                    </pre>
+                </section>
+                <section class="section english-section" id="english">
+                    <h2 class="section-title">English</h2>
+                    <p class="text"><a class="link" href="https://www.efset.org/cert/bbeJ7q">C2 according to EF Standart English Test</a> but I have little "speaking" experience, so it will obviously be less</p>
+                </section>
             </div>
 
         </div>
     </main>
     <footer class="footer">
         <div class="container footer-container">
-            footer
+            <a href="https://github.com/blindLegi"><img class="logo" src="./assets/svg/GitHub-Emblem.png" alt="My GitHub"></a> 
+            <span class="year">2022</span> 
+            <a href="https://rs.school/js/"><img class="logo" src="./assets/svg/rs_school_js.svg" alt="`RS School"></a> 
         </div>
     </footer>
+    <script src="./index.js"></script>
 </body>
 </html>
