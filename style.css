@@ -157,10 +157,6 @@ a {
     display: flex;
 }
 
-.aside {
-    /* background: #e5ffe7; */
-}
-
 .section {
     margin: 20px;
     padding: 10px;
@@ -232,10 +228,23 @@ a {
     border-radius: 20px;
 }
 
-.main-section {
-    background: #ffe5e5;
-}
 
 .footer-container {
-    background: #fac5ff;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.logo {
+    width: 81px;
+    height: auto;
+
+    transition: .3s;
+}
+
+.logo:hover {
+    cursor: pointer;
+    opacity: 0.5;
 }
