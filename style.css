@@ -41,6 +41,14 @@ a {
     color: #000;
 }
 
+.link {
+    transition: .3s;
+}
+
+.link:hover {
+    background-color: rgb(255, 221, 221);
+}
+
 .text {
     font-weight: 100;
 }
@@ -149,7 +157,7 @@ a {
 }
 
 .section-title {
-    padding: 5px;
+    padding: 5px 5px 15px;
     text-align: center;
 }
 
@@ -159,10 +167,12 @@ a {
 
 .section {
     margin: 20px;
-    padding: 10px;
+    padding: 20px;
     border-radius: 20px;
     box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.35);  
     transition: .3s;
+
+    text-align: center;
 }
 
 .section:hover {
@@ -195,6 +205,10 @@ a {
 
 .code-section {
     background: #feffe5;
+}
+
+.code {
+    text-align: start;
 }
 
 .english-section {
