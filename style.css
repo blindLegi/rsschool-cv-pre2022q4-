@@ -48,8 +48,8 @@ a {
 .menu-btn {
     display: flex;
     align-items: center;
-    position: fixed;
-    top: 31px;
+    position: relative;
+    top: 15px;
     left: 31px;
 
     width: 32px;
@@ -153,10 +153,6 @@ a {
     text-align: center;
 }
 
-.head-container {
-    background: #fff9cd;
-}
-
 .main-container {
     display: flex;
 }
@@ -232,7 +228,7 @@ a {
 
 .avatar {
     margin: 0 20px 20px 20px;
-    width: 400px;
+    width: 300px;
     border-radius: 20px;
 }
 
